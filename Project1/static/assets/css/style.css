@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    /* Refined background gradient for a vibrant look */
+    background-image: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+}
+body{
+    background-image: url("static\assets\images\Logo-medicover.png");
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.form-side, .info-side {
+    flex: 1;
+    padding: 20px;
+}
+
+.form-box {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    /* Enhanced border and shadow for a more pronounced depth */
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.form-box h2 {
+    /* Gradient text for the heading */
+    background: linear-gradient(left, #6C63FF, #ff758c);
+    /* -webkit-background-clip: text; */
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 10px 10px 40px; /* Space for icon */
+    /* Subtle background color for input fields */
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 2px solid #e7e7e7;
+    outline: none;
+    /* Shadow on focus for an interactive feel */
+    box-shadow: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-box input:focus {
+    border-color: #6C63FF; /* Highlight color */
+    box-shadow: 0 0 8px rgba(108,99,255,0.5);
+}
+
+.input-box label {
+    position: absolute;
+    top: -25px; /* Above the input field */
+    left: 40px; /* Align with text inside input */
+    transition: all 0.3s ease;
+    /* Use gradient for labels too */
+    background: -webkit-linear-gradient(right, #6C63FF, #ff758c);
+    /* -webkit-background-clip: text; */
+    -webkit-text-fill-color: transparent;
+}
+
+.input-box i {
+    position:absolute;
+    left:10px;
+    top:50%;
+    transform:translateY(-50%);
+    /* Match icon color with the label gradient */
+    background: -webkit-linear-gradient(right, #6C63FF, #ff758c);
+    /* -webkit-background-clip: text; */
+    -webkit-text-fill-color: transparent;
+}
+
+/* Hover animation for icons */
+.input-box:hover i {
+    transform: translateY(-50%) scale(1.1); /* Slightly enlarge and animate icons */
+}
+
+/* Apply fadeIn animation to both sides of the wrapper */
+.form-side, .info-side {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.btn {
+    display:block;
+    width:100%;
+    padding:10px;
+    /* Gradient background for button with hover effect */
+    background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+    border:none;
+}
+
+.btn:hover {
+    /* Slightly lighter gradient on hover */
+    background-image: linear-gradient(to right, #9d50bb, #6e48aa);
+}
+
+.logreg-link p, .logreg-link p a {
+    text-align:center;
+}
+
+.info-side {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.info-text img {
+    display:block;
+    margin-bottom:20px; 
+    width:auto; 
+    max-width:100%; 
+}
+
+.info-text h2, .info-text p {
+    text-align:center;
+}
